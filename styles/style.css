@@ -1,0 +1,15 @@
+header {
+    background-color: #5c7fff;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    max-width: auto;
+}
+
+header .logo {
+    max-width: 15%;
+    max-height: 200px;
+}
