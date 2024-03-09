@@ -10,6 +10,12 @@ nav {
     padding: 25px;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
 body {
     margin: 0;
     border: 0;
@@ -21,6 +27,11 @@ header .logo {
     max-width: 100px;
     max-height: 200px;
 }
+
+.logo_link {
+    margin: 10px auto;
+}
+
 
 
 
