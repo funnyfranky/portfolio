@@ -4,10 +4,11 @@ header {
     grid-template-columns: 150px auto;
 }
 
-nav {
+nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-around;
-    padding: 25px;
+    margin: 45px 0;
 }
 
 nav a {
@@ -27,8 +28,41 @@ header .logo {
     max-height: 200px;
 }
 
+footer .grid_2_left_larger {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
 .logo_link {
     margin: 10px auto;
+}
+
+.home_main_content {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main_card {
+    display: grid;
+    
+}
+
+.main_card h3 {
+    height: 25px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main_img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.solid_border {
+    border: 1px solid black;
+    padding: 15px 30px;
+    margin: 0;
 }
 
 /* --- Styles for form on contact us page --- */
