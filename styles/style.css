@@ -32,6 +32,9 @@ footer .grid_2_left_larger {
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
+footer .social_media_img {
+    width: 50px;
+}
 
 .logo_link {
     margin: 10px auto;
