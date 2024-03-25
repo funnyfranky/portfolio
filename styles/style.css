@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* STYLES FOR NAV */
+body {
+    --primary-color: #385AA6;
+    --secondary-color: #FDD616;
+    --accent1-color: #686868;
+    --accent2-color: #C0AB3A;
+
+    --heading-font: "Playfair Display";
+    --paragraph-font: Noto Sans, Helvetica, sans-serif;
+    
+    --headline-color-on-white: #335297;
+    --headline-color-on-color: #FDD616;
+    --paragraph-color-on-white: #396E94;
+    --paragraph-color-on-color: #C0AB3A;
+    --paragraph-background-color: #686868;
+    --nav-link-color: #C0AB3A;
+    --nav-background-color: #385AA6;
+    --nav-hover-link-color: #FDD616;
+    --nav-hover-background-color: #4A6DD3;
+}
+
 header {
-    background-color: #5c7fff;
+    background-color: var(--nav-background-color);
     display: grid;
     grid-template-columns: 150px auto;
+}
+
+nav {
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 8px;
 }
 
 nav ul {
@@ -11,34 +48,29 @@ nav ul {
     margin: 45px 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-
-}
-
-body {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
 
 header .logo {
     max-width: 100px;
     max-height: 200px;
 }
 
-footer .grid_2_left_larger {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-}
-
-footer .social_media_img {
-    width: 50px;
-}
-
 .logo_link {
-    margin: 10px auto;
+    margin: 20px auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+/* --- OTHER CSS FOR PAGES --- */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.main_img {
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .home_main_content {
@@ -48,20 +80,16 @@ footer .social_media_img {
 }
 
 .main_card {
-    display: grid;
-
+    text-align: center;
 }
 
 .main_card h3 {
-    height: 25px;
+    /* height: 20px; */
     padding: 0;
     margin: 0 auto;
+    font-size: 30px;
 }
 
-.main_img {
-    max-width: 100%;
-    border-radius: 15px;
-}
 
 .solid_border {
     border: 1px solid black;
@@ -69,7 +97,64 @@ footer .social_media_img {
     margin: 0;
 }
 
-/* --- Styles for form on contact us page --- */
+/* ---      Styles for FOOTER      --- */
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer a {
+    color: var(--headline-color-on-color)
+}
+
+footer .grid_2_left_larger {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+footer .social_media_img {
+    width: 50px;
+}
+
+footer {
+    background-color: #686868;
+    color: white;
+    padding: 20px 15px;
+}
+
+footer a {
+    text-decoration: none;
+    /* color: lightgray; */
+
+}
+footer a:hover {
+    color: rgb(173, 173, 173);
+    text-decoration: underline;
+}
+#flex_box {
+    display: flex;
+    justify-content: space-between;
+}
+footer h4 {
+    margin: 20px auto;
+}
+footer .grid_3_even {
+    margin: 0 auto;
+}
+
+/* ---      Styles for INDEX.HTML      --- */
+
+.main_card {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+ol, ul {
+    height: 90%;
+}
+.index_list {
+    font-size: 1.1em;
+}
+.workout_list {
+    padding-left: 5%;
+}
+
+/* ---      Styles for form on contact us page      --- */
 #feedback {
     background-color: antiquewhite;
     position: absolute;
@@ -159,7 +244,7 @@ button {
 
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
 
     #hero,
     .home-grid {
@@ -218,4 +303,4 @@ button {
     footer {
         margin-top: 25px;
     }
-}
+} */
