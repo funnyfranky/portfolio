@@ -23,6 +23,10 @@ body {
     --nav-hover-background-color: #4A6DD3;
 
     --dark-border-color: #000;
+
+    display: flex;  /* Consider using flexbox  */
+    /* min-height: 100vh;  Make the body take full viewport height */
+    flex-direction: column; 
 }
 
 header {
@@ -157,13 +161,19 @@ ol, ul {
 .workout_list {
     padding-left: 5%;
 }
+
+/* General Styles for Workouts Page */
+.workout_main {
+    flex-grow: 1;
+}
+
 /* --- Styles for vertical tabs on workouts page --- */
 .tab {
     float: left;
     border: 1px solid var(--dark-border-color);
     background-color: var(--paragraph-background-color);
     width: 30%;
-    height: 300px;
+    min-height: 300px;
     padding: 22px 16px;
 
 }
@@ -187,11 +197,15 @@ ol, ul {
 }
 .tabcontent {
     float: left;
-    padding: 0px 12px;
+    padding: 12px;
     border: 1px solid var(--dark-border-color);
     width: 70%;
     border-left: none;
-    height: 300px;
+    min-height: 300px;
+    display: none;
+}
+.tab h3, .tab h4 {
+    color: var(--headline-color-on-color)
 }
 
 
@@ -278,7 +292,11 @@ button {
     margin-left: 0.5em;
 }
 
-
+.clearfix::after { 
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 

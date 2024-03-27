@@ -17,5 +17,8 @@ function openCity(evt, cityName) {
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+
+    // // Get the first tab button and simulate a click 
+    // document.getElementsByClassName("tablinks")[0].click();
   }
   
