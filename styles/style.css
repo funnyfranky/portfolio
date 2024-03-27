@@ -68,6 +68,7 @@ header .logo {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
+    margin: 15px
 }
 /* --- OTHER CSS FOR PAGES --- */
 body {
@@ -165,6 +166,9 @@ ol, ul {
 /* General Styles for Workouts Page */
 .workout_main {
     flex-grow: 1;
+}
+.float_right {
+    float: right;
 }
 
 /* --- Styles for vertical tabs on workouts page --- */
