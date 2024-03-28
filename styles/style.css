@@ -203,7 +203,7 @@ ol, ul {
     float: left;
     padding: 12px;
     border: 1px solid var(--dark-border-color);
-    width: 70%;
+    width: 40%;
     border-left: none;
     min-height: 300px;
     display: none;
