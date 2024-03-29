@@ -32,26 +32,71 @@
         <div>
             <div class="tab">
                 <h4>Menu</h4>
-                <button class="tablinks" onclick="">All Workout Ideas</button>
-                <button class="tablinks" onclick="">Cardio</button>
-                <button class="tablinks" onclick="">Arms and Shoulders</button>
-                <button class="tablinks" onclick="">Core</button>
-                <button class="tablinks" onclick="">Legs</button>
-                <button>Edit Shown</button>
+                <button class="tablinks" onclick="openWorkout(event, 'category1')">All Workout Ideas</button>
+                <button class="tablinks" onclick="openWorkout(event, 'category2')">Cardio</button>
+                <button class="tablinks" onclick="openWorkout(event, 'category3')">Arms and Shoulders</button>
+                <button class="tablinks" onclick="openWorkout(event, 'category4')">Core</button>
+                <button class="tablinks" onclick="openWorkout(event, 'category5')">Legs</button>
+                <button class="tablinks" onclick="">Edit Shown</button>
             </div>
             
         </div>
-        <div class="tab">
+        <div id="category1" class="tab firsttabcontent">
             <h4>Workout</h4>
-            <button class="tablinks" onclick="openCity(event, 'item1')">Workout list item</button>
-            <button class="tablinks" onclick="openCity(event, 'item2')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category1item1')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category1item2')">Workout list item</button>
+            <!-- <button class="tablinks" onclick="openCity(event, 'item3')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item4')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item5')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item6')">Workout list item</button> -->
+        </div>
+        <div id="category2" class="tab firsttabcontent">
+            <h4>Workout</h4>
+            <button class="tablinks" onclick="openCity(event, 'category2item1')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category2item2')">Workout list item</button>
+            <!-- <button class="tablinks" onclick="openCity(event, 'item3')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item4')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item5')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item6')">Workout list item</button> -->
+        </div>
+        <div id="category3" class="tab firsttabcontent">
+            <h4>Workout</h4>
+            <button class="tablinks" onclick="openCity(event, 'category3item1')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category3item2')">Workout list item</button>
+            <!-- <button class="tablinks" onclick="openCity(event, 'item3')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item4')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item5')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item6')">Workout list item</button> -->
+        </div>
+        <div id="category4" class="tab firsttabcontent">
+            <h4>Workout</h4>
+            <button class="tablinks" onclick="openCity(event, 'category4item1')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category4item2')">Workout list item</button>
+            <!-- <button class="tablinks" onclick="openCity(event, 'item3')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item4')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item5')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item6')">Workout list item</button> -->
+        </div>
+        <div id="category5" class="tab firsttabcontent">
+            <h4>Workout</h4>
+            <button class="tablinks" onclick="openCity(event, 'category5item1')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category5item2')">Workout list item</button>
+            <!-- <button class="tablinks" onclick="openCity(event, 'item3')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item4')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item5')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'item6')">Workout list item</button> -->
+        </div>
+        <!-- <div id="category6" class="tab firsttabcontent">
+            <h4>Workout</h4>
+            <button class="tablinks" onclick="openCity(event, 'category6item1')">Workout list item</button>
+            <button class="tablinks" onclick="openCity(event, 'category6item2')">Workout list item</button>
             <button class="tablinks" onclick="openCity(event, 'item3')">Workout list item</button>
             <button class="tablinks" onclick="openCity(event, 'item4')">Workout list item</button>
             <button class="tablinks" onclick="openCity(event, 'item5')">Workout list item</button>
             <button class="tablinks" onclick="openCity(event, 'item6')">Workout list item</button>
-        </div>
+        </div> -->
 
-        <div id="item1" class="tabcontent">
+        <div id="category1item1" class="tabcontent">
             <h6 class="float_right">Cardio</h6>
             <h4>Workout Type</h4>
             <iframe width="360" height="202.5" src="https://www.youtube.com/embed/2bFSr3pZFjc"
@@ -68,21 +113,149 @@
                 <li>Thing to remember 5</li>
             </ol>
         </div>
-        <div id="item2" class="tabcontent">
-            <p>Content for item2</p>
+        <div id="category1item2" class="tabcontent">
+            <p>Content for category1item2</p>
         </div>
-        <div id="item3" class="tabcontent">
-            <p>Content for item3</p>
+        <!-- <div id="category1item3" class="tabcontent">
+            <p>Content for category1item2</p>
         </div>
-        <div id="item4" class="tabcontent">
-            <p>Content for item4</p>
+        <div id="category1item4" class="tabcontent">
+            <p>Content for category1item2</p>
         </div>
-        <div id="item5" class="tabcontent">
-            <p>Content for item5</p>
+        <div id="category1item5" class="tabcontent">
+            <p>Content for category1item2</p>
         </div>
-        <div id="item6" class="tabcontent">
-            <p>Content for item6</p>
+        <div id="category1item6" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div> -->
+        <div id="category2item1" class="tabcontent">
+            <h6 class="float_right">Cardio</h6>
+            <h4>Workout Type</h4>
+            <iframe width="360" height="202.5" src="https://www.youtube.com/embed/2bFSr3pZFjc"
+                title="Leaves From The Vine | Little Soldier Boy - Avatar: The Last Airbender (Piano Cover)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h4>What to Remember about this workout</h4>
+            <ol>
+                <li>Thing to remember 1</li>
+                <li>Thing to remember 2</li>
+                <li>Thing to remember 3</li>
+                <li>Thing to remember 4</li>
+                <li>Thing to remember 5</li>
+            </ol>
         </div>
+        <div id="category2item2" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <!-- <div id="category1item3" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item4" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item5" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item6" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div> -->
+        <div id="category3item1" class="tabcontent">
+            <h6 class="float_right">Cardio</h6>
+            <h4>Workout Type</h4>
+            <iframe width="360" height="202.5" src="https://www.youtube.com/embed/2bFSr3pZFjc"
+                title="Leaves From The Vine | Little Soldier Boy - Avatar: The Last Airbender (Piano Cover)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h4>What to Remember about this workout</h4>
+            <ol>
+                <li>Thing to remember 1</li>
+                <li>Thing to remember 2</li>
+                <li>Thing to remember 3</li>
+                <li>Thing to remember 4</li>
+                <li>Thing to remember 5</li>
+            </ol>
+        </div>
+        <div id="category3item2" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <!-- <div id="category1item3" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item4" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item5" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item6" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div> -->
+        <div id="category4item1" class="tabcontent">
+            <h6 class="float_right">Cardio</h6>
+            <h4>Workout Type</h4>
+            <iframe width="360" height="202.5" src="https://www.youtube.com/embed/2bFSr3pZFjc"
+                title="Leaves From The Vine | Little Soldier Boy - Avatar: The Last Airbender (Piano Cover)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h4>What to Remember about this workout</h4>
+            <ol>
+                <li>Thing to remember 1</li>
+                <li>Thing to remember 2</li>
+                <li>Thing to remember 3</li>
+                <li>Thing to remember 4</li>
+                <li>Thing to remember 5</li>
+            </ol>
+        </div>
+        <div id="category4item2" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <!-- <div id="category1item3" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item4" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item5" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item6" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div> -->
+        <div id="category5item1" class="tabcontent">
+            <h6 class="float_right">Cardio</h6>
+            <h4>Workout Type</h4>
+            <iframe width="360" height="202.5" src="https://www.youtube.com/embed/2bFSr3pZFjc"
+                title="Leaves From The Vine | Little Soldier Boy - Avatar: The Last Airbender (Piano Cover)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h4>What to Remember about this workout</h4>
+            <ol>
+                <li>Thing to remember 1</li>
+                <li>Thing to remember 2</li>
+                <li>Thing to remember 3</li>
+                <li>Thing to remember 4</li>
+                <li>Thing to remember 5</li>
+            </ol>
+        </div>
+        <div id="category5item2" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <!-- <div id="category1item3" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item4" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item5" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div>
+        <div id="category1item6" class="tabcontent">
+            <p>Content for category1item2</p>
+        </div> -->
 
 
     </main>
