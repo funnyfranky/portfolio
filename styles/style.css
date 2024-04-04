@@ -243,6 +243,7 @@ ol, ul {
     grid-row: 1 / 2;
     border-color: var(--accent2-color);
     border-width: thick;
+    border-radius: 10px;
 }
 #profile_text {
     padding: 10px 30px;
