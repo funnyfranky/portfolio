@@ -221,6 +221,39 @@ ol, ul {
     color: var(--headline-color-on-color)
 }
 
+/* --- Styles for Profile Page --- */
+.grid_3_profile {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    overflow: hidden;
+}
+.hundred_percent_image {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.light_background {
+    background-color: #fff;
+}
+#profile_pic {
+    width: 100%;
+    border-style: solid;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border-color: var(--accent2-color);
+    border-width: thick;
+}
+#profile_text {
+    padding: 10px 30px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 30px 0;
+}
+#side_background_img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
 
 /* ---      Styles for form on contact us page      --- */
 #feedback {
